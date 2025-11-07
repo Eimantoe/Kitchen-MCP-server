@@ -1,17 +1,17 @@
 from typing import Any
+
 from mcp.server.fastmcp import FastMCP
 
-from kitchen_commons.shared.APIRequest import APIRequest
-from kitchen_commons.shared.Logging import logger
-from kitchen_commons.shared.Settings import settings
+from shared.Settings import settings
+from shared.Logger import logger
+from shared.APIRequest import APIRequest
 
 mcp = FastMCP("Restaurant MCP")
-
 
 # Tool to fetch the menu from the Waitress service
 @mcp.tool()
 async def get_menu() -> Any:
-    """tw
+    """
     Fetches the menu from the Waitress service.
     """
     api_request = APIRequest(

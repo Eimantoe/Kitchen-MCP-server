@@ -6,7 +6,7 @@ class Settings(BaseSettings): # type: ignore
     waitress_service_url : str = "http://localhost:6000"
 
     model_config = SettingsConfigDict(
-        env_file=".env",
+        env_file=".restaurantvenv",
         env_file_encoding="utf-8"
     )
 
