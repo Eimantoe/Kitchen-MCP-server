@@ -10,6 +10,6 @@ class Settings(BaseSettings): # type: ignore
         env_file_encoding="utf-8"
     )
 
-    USER_AGENT = "Restaurant-MCP/1.0"
+    USER_AGENT : str = "Restaurant-MCP/1.0"
 
 settings = Settings()

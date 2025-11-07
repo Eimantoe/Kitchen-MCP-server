@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/kitchen_mcp.egg-info/PKG-INFO
+src/kitchen_mcp.egg-info/SOURCES.txt
+src/kitchen_mcp.egg-info/dependency_links.txt
+src/kitchen_mcp.egg-info/entry_points.txt
+src/kitchen_mcp.egg-info/requires.txt
+src/kitchen_mcp.egg-info/top_level.txt
+src/restaurant_mcp/__init__.py
+src/restaurant_mcp/server.py
+src/shared/APIRequest.py
+src/shared/HTTPClientManager.py
+src/shared/Logger.py
+src/shared/Settings.py
+src/shared/__init__.py

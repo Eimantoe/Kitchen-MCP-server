@@ -1,8 +1,8 @@
 import asyncio
 from enum import Enum
 from typing import Any
-from Logger import logger
-from HTTPClientManager import http_client_manager
+from .Logger import logger
+from .HTTPClientManager import http_client_manager
 import httpx
 import logging
 from tenacity import (

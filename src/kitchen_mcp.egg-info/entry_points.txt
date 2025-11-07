@@ -1,0 +1,2 @@
+[console_scripts]
+restaurant-mcp-server = restaurant_mcp.server:main

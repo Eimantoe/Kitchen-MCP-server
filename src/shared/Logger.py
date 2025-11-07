@@ -1,7 +1,7 @@
 import logging
 import sys
 import structlog
-from Settings import settings
+from .Settings import settings
 
 def configure_logging(is_dev_mode=True):
     """

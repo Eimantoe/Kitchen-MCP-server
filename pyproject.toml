@@ -26,6 +26,12 @@ dev = [
     "ruff>=0.1.0",
 ]
 
+[project.scripts]
+restaurant-mcp-server = "restaurant_mcp.server:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
 [tool.setuptools.packages.find]
-where = ["."]
-include = ["src*"]
+where = ["src"]
+include = ["*"]
