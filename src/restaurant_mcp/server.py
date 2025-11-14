@@ -5,8 +5,23 @@ from mcp.server.fastmcp import FastMCP
 from shared.Settings import settings
 from shared.Logger import logger
 from shared.APIRequest import APIRequest
+from shared.Lifecycle import (
+    startup_http_client,
+    shutdown_http_client
+)
 
-mcp = FastMCP("Restaurant MCP")
+from contextlib import asynccontextmanager
+
+
+@asynccontextmanager
+async def lifespan(app: FastMCP):
+    await startup_http_client()
+    
+    yield
+
+    await shutdown_http_client()
+
+mcp = FastMCP("Restaurant MCP", lifespan=lifespan)
 
 # Tool to fetch the menu from the Waitress service
 @mcp.tool()

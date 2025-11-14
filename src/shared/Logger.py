@@ -42,7 +42,7 @@ def configure_logging(is_dev_mode=True):
     
     # 3. Configure the standard logging library to pass messages to structlog
     # This ensures logs from other libraries (e.g., SQLAlchemy) are also structured.
-    logging.basicConfig(level=logging.INFO, stream=sys.stdout, format="%(message)s")
+    logging.basicConfig(level=logging.INFO, stream=sys.stderr, format="%(message)s")
 
 configure_logging(is_dev_mode=settings.debug_mode)
 
