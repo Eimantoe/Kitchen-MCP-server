@@ -10,6 +10,7 @@ src/restaurant_mcp/__init__.py
 src/restaurant_mcp/server.py
 src/shared/APIRequest.py
 src/shared/HTTPClientManager.py
+src/shared/Lifecycle.py
 src/shared/Logger.py
 src/shared/Settings.py
 src/shared/__init__.py
